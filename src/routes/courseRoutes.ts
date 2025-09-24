@@ -1,9 +1,7 @@
 import { Router, type Request, type Response } from "express";
-import { courses, students } from "../db/db.js";
+import { courses } from "../db/db.js";
 import { zCourseId, zCoursePutBody, zCourseDeleteBody } from "../schemas/courseValidator.js";
-import { ca } from "zod/locales";
 import { type Course } from "../libs/types.js";
-import { success } from "zod";
 const router: Router = Router();
 
 // READ all

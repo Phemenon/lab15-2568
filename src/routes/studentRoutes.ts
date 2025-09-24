@@ -1,6 +1,5 @@
 import { Router, type Request, type Response } from "express";
-import { zStudentPutBody, zStudentId } from "../schemas/studentValidator.js";
-import { success } from "zod";
+import { zStudentId } from "../schemas/studentValidator.js";
 import { students, courses } from "../db/db.js";
 const router = Router();
 
